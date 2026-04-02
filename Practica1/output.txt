@@ -1,0 +1,56 @@
+dup
+dup.c
+ej10
+ej10.c
+ej11
+ej11.c
+ej12.c
+ej5
+ej5.c
+ej6
+ej6.c
+ej7
+ej7.c
+ej8a
+ej8a.c
+ej8b
+ej8b.c
+fork
+fork.c
+fork_wait
+fork_wait.c
+fork_wait_exec
+fork_wait_exec.c
+hello
+hello.c
+huerta.txt
+minish
+minish.c
+output.txt
+9:43 ej10
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   856 mar 18 09:43 ej10.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16344 mar 18 10:34 ej11
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez  1694 mar 18 10:34 ej11.c
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   374 mar 17 20:09 ej12.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 15960 mar 13 16:50 ej5
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   484 mar 13 17:04 ej5.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16128 mar 13 17:50 ej6
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez  1204 mar 27 16:25 ej6.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16304 mar 14 10:51 ej7
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez  1452 mar 26 16:14 ej7.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16136 mar 14 18:37 ej8a
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   465 mar 14 18:36 ej8a.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16136 mar 14 18:37 ej8b
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   359 mar 14 18:36 ej8b.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16088 mar 27 16:34 fork
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   448 mar 27 16:41 fork.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16184 mar 27 16:38 fork_wait
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   462 mar 27 16:38 fork_wait.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16184 mar 27 16:43 fork_wait_exec
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   477 mar 27 16:43 fork_wait_exec.c
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 15960 mar 16 17:21 hello
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez   212 mar 16 17:21 hello.c
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez    31 mar 17 17:01 huerta.txt
+-rwxrwxr-x 1 juancho_gonzalez juancho_gonzalez 16856 mar 17 17:00 minish
+-rw-rw-r-- 1 juancho_gonzalez juancho_gonzalez  7866 mar 26 16:18 minish.c
+-rw------- 1 juancho_gonzalez juancho_gonzalez  2137 mar 27 17:14 output.txt
