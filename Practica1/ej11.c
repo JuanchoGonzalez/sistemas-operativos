@@ -13,9 +13,17 @@
 void minimo_local_pipe() {
     int arr[N] = {10, -2, -3, 14, -20, 5, -30, -5, 23, 10};
     
+    // int pipes[N][2]
     int p[2]; // con un solo pipe que los hijos manden la informacion esta, se pone 2 xq uno para leer y otro para escribir
     pipe(p);
 
+    // inicializar pipe ver
+    // hacer con for
+    // pipe(pipes[i])
+    // ver si es lo mismo que tengo, o que.
+
+
+    // dentro de este while hacer un read por ahi, para mas eficiencia ver
     int i = 0;
     while (i < P) {
         pid_t id_proceso = fork();
