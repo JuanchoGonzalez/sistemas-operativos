@@ -1,4 +1,20 @@
+# 1. Carpetas de editores
+.vscode/
+
+# 2. Archivos específicos que siempre se van
 *.o
 *.a
 *.so
-.vscode
+
+# 3. LA REGLA MÁGICA:
+# Primero: Permitir que Git entre en cualquier carpeta
+!*/
+
+# Segundo: Ignorar todo (esto afectará a los archivos sin extensión)
+*
+
+# Tercero: Excepciones (lo que SÍ querés ver)
+!*.*
+!Makefile
+!README.md
+!.gitignore

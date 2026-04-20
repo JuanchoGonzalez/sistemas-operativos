@@ -112,9 +112,9 @@ void ejecutar_comando_pipe(char *comando1, char *comando2) {
     pid_t pid1 = fork();
     if (pid1 == 0) { // hijo 1
         close(p[0]); // cierro lectura no me interesa
-        dup2(p[1], 1); // desconecta el cable 1 de la pantalla y enchufa al p[1]
+        dup2(p[1], 1); // cambio la salida por pantalla a stdout por pipe
         close(p[1]); // cierro la boca original xq ya la copie
-        execvp(args1[0], args1);
+        execvp(args1[0], args1); // ejecuta los argumentos
         perror("Error al ejecutar comando 1");
         exit(1);
     }
@@ -122,7 +122,7 @@ void ejecutar_comando_pipe(char *comando1, char *comando2) {
     pid_t pid2 = fork();
     if (pid2 == 0) {
         close(p[1]); // cierro escritura no me interesa
-        dup2(p[0], 0); // desconecto el cable 1 y enchufo a la parte de escritura
+        dup2(p[0], 0); // cierro para escribir por teclado (stdin) a escribir en el pipe
         close(p[0]); // cierro la oreja xq ya la copie
         execvp(args2[0], args2); 
         perror("Error al ejecutar comando 2");
