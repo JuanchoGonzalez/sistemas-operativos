@@ -37,6 +37,7 @@ void trap(struct trap_frame *tf)
             if (task) {
                 printf("Task %s in CPU %d illegal instruction at address %x\n",
                        task->name, cpu_id, ra);
+                
                 skip_task_instruction(tf);
                 ra = tf->ra;
             } else
