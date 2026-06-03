@@ -1,0 +1,117 @@
+
+There are no discarded input sections
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+*default*        0x00000000         0xffffffff
+
+Guión del enlazador y mapa de memoria
+
+LOAD /tmp/ccWlw0im.o
+LOAD /tmp/ccetM49E.o
+LOAD /tmp/cc9KR5sd.o
+LOAD /tmp/ccDufSfQ.o
+LOAD /tmp/ccPODDFI.o
+                0x80000000                        . = 0x80000000
+
+.text           0x80000000      0x4d0
+ *(.text.boot)
+ *(.text .text.*)
+ .text          0x80000000       0x8c /tmp/ccWlw0im.o
+                0x80000000                boot
+                0x80000074                cpuid
+                0x8000007c                disable_interrupts
+                0x80000084                enable_interrupts
+ .text          0x8000008c       0x78 /tmp/ccetM49E.o
+                0x8000008c                console_putc
+                0x800000c0                console_puts
+ .text          0x80000104       0x64 /tmp/cc9KR5sd.o
+                0x80000104                kernel_main
+ .text          0x80000168      0x2f4 /tmp/ccDufSfQ.o
+                0x80000168                memset
+                0x80000198                memcpy
+                0x800001d0                strcpy
+                0x80000214                strcmp
+                0x80000258                printf
+ .text          0x8000045c       0x74 /tmp/ccPODDFI.o
+                0x8000045c                acquire
+                0x800004a0                release
+
+.rodata         0x800004d0       0x5d
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x800004d0       0x5d /tmp/cc9KR5sd.o
+                                 0x49 (tamaño antes de la relajación)
+ .rodata.str1.4
+                0x8000052d       0x11 /tmp/ccDufSfQ.o
+
+.eh_frame       0x80000530      0x1e0
+ .eh_frame      0x80000530       0x64 /tmp/ccetM49E.o
+ .eh_frame      0x80000594       0x20 /tmp/cc9KR5sd.o
+                                 0x34 (tamaño antes de la relajación)
+ .eh_frame      0x800005b4      0x108 /tmp/ccDufSfQ.o
+                                0x11c (tamaño antes de la relajación)
+ .eh_frame      0x800006bc       0x54 /tmp/ccPODDFI.o
+                                 0x68 (tamaño antes de la relajación)
+
+.eh_frame_hdr   0x80000710       0x5c
+ .eh_frame_hdr  0x80000710       0x5c /tmp/ccetM49E.o
+                0x80000710                __GNU_EH_FRAME_HDR
+
+.rela.dyn       0x8000076c        0x0
+ .rela.text     0x8000076c        0x0 /tmp/ccWlw0im.o
+
+.data           0x8000076c        0x0
+ *(.data .data.*)
+ .data          0x8000076c        0x0 /tmp/ccWlw0im.o
+ .data          0x8000076c        0x0 /tmp/ccetM49E.o
+ .data          0x8000076c        0x0 /tmp/cc9KR5sd.o
+ .data          0x8000076c        0x0 /tmp/ccDufSfQ.o
+ .data          0x8000076c        0x0 /tmp/ccPODDFI.o
+
+.bss            0x8000076c        0x0
+                0x8000076c                        __bss = .
+ *(.bss .bss.* .sbss .sbss.*)
+ .bss           0x8000076c        0x0 /tmp/ccWlw0im.o
+ .bss           0x8000076c        0x0 /tmp/ccetM49E.o
+ .bss           0x8000076c        0x0 /tmp/cc9KR5sd.o
+ .bss           0x8000076c        0x0 /tmp/ccDufSfQ.o
+ .bss           0x8000076c        0x0 /tmp/ccPODDFI.o
+                0x8000076c                        __bss_end = .
+                0x8000076c                        . = ALIGN (0x4)
+                0x8000076c                        __stack0 = .
+                0x8002076c                        . = (. + 0x20000)
+                0x8002076c                        __kernel_end = .
+OUTPUT(kernel elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x3c
+ .riscv.attributes
+                0x00000000       0x3a /tmp/ccWlw0im.o
+ .riscv.attributes
+                0x0000003a       0x38 /tmp/ccetM49E.o
+ .riscv.attributes
+                0x00000072       0x38 /tmp/cc9KR5sd.o
+ .riscv.attributes
+                0x000000aa       0x38 /tmp/ccDufSfQ.o
+ .riscv.attributes
+                0x000000e2       0x38 /tmp/ccPODDFI.o
+
+.comment        0x00000000       0x2d
+ .comment       0x00000000       0x2d /tmp/ccetM49E.o
+                                 0x2e (tamaño antes de la relajación)
+ .comment       0x0000002d       0x2e /tmp/cc9KR5sd.o
+ .comment       0x0000002d       0x2e /tmp/ccDufSfQ.o
+ .comment       0x0000002d       0x2e /tmp/ccPODDFI.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccetM49E.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/cc9KR5sd.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccDufSfQ.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccPODDFI.o

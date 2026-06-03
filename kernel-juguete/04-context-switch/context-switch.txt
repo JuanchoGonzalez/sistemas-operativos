@@ -1,0 +1,10 @@
+Ejercicio 2:
+
+Los registros que empiezan con la letra s (Saved registers) se usan, segun la convencion de llamadas (ABI) para guardar las variables locales importantes que deben sobrevivir a través de las llamadas de funciones. cuando se hace un context switch de tarea A a tarea B, el A hace push el estado de los registros s en su pila, para cuando vuelva a ser usado por la CPU, cuando vuelva a A van a ser salvados(pop). luego se cambia a la tarea B, B recupera los registros s haciendo pop, permitiendo que B siga con la ejecucion como habia quedado de antes.
+
+Ejercicio 3:
+
+porque el compilador en este caso de c (gcc) hizo ese trabajo antes, si la función original tenía algún cálculo importante en un registro temporal (los caller-saved), el propio compilador ya insertó instrucciones para guardarlo en la pila del usuario justo antes de hacer el call a context_switch.
+si esto hubiera sido por una interrupcion o excepcion (trap) hubiera sido distinto , aca el SO esta obligado a armar/crear el trapframe que se guardarian todos(32) los registros de CPU porque no puede confiar en el ABI.
+
+
